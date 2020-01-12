@@ -1,0 +1,5 @@
+<!--comment/comment.wxml-->
+<view class='container'>
+    <textarea bindinput='comment' maxlength="100" placeholder='请认真填写哟，每人只能发表一次，不要超过100字!'></textarea>
+    <view class='submit' bindtap='submit'>发表</view>
+</view>

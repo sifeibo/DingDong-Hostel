@@ -1,0 +1,78 @@
+<!--pages/yunpan/yunpan.wxml-->
+<view class='container'>
+    <!-- 搜索框 -->
+  <view class='search'>
+    <view class="searchWrap {{tag2==false?'active':''}}">
+      <icon class='iconS' type='search' color='#80808F' size='13'></icon>
+      <input value='{{searchKey}}' type='text' focus='true' confirm-type='search' bindconfirm='search'
+       placeholder='搜索网盘文件！' class='searchInput'></input>
+    </view>
+  </view>
+  <!-- 搜索框end -->
+
+  <!-- 文件列表 -->
+  <view class='file-box'> 
+    <view class='file-item' wx:for="{{list}}" wx:key="" data-index='{{index}}' data-name='{{item.name}}' data-attribute='{{item.attribute}}'  bindtap='clickfile'>
+      <image class='file-icon' wx:if='{{item.attribute === "file"}}' src='../../images/yunpan/txt.png'></image>
+      <image class='file-icon' wx:else src='../../images/yunpan/file.png'></image>
+      <text class='file-name'>{{item.name}}</text>
+      <image class='file-select' catchtap='clickselect' data-index='{{index}}' data-attribute='{{item.attribute}}' data-name='{{item.name}}' src='../../images/yunpan/more.png'></image>
+    </view>
+  </view>
+  <!-- 编辑 -->
+  <view class='show-popup' hidden="{{selecttag}}">    
+    <view class="popup-mask" bindtap="closePopupTap"></view>
+    <view  class="popup-contents">
+      <view class='file-detail'>
+        <image wx:if='{{isdir}}' src='../../images/yunpan/file.png'></image>
+        <image wx:else src='../../images/yunpan/txt.png'></image>
+        <text>{{filename}}</text>
+      </view>
+      <view class='edit' wx:for='{{edit}}'  wx:key="" data-index='{{index}}' data-name='{{item.name}}' bindtap='editselect'>
+        <image src='{{item.image}}'></image>
+        <text>{{item.name}}</text>
+      </view>
+      <view class='button'  bindtap="closePopupTap">取消</view>
+    </view>
+  </view> 
+  <!-- 编辑end -->
+  <!-- 文件列表end -->
+
+  <!-- 底部栏 -->
+  <view class='bottom-box' bindtap='shangchuan'>
+    <image src='../../images/yunpan/create.png'></image>
+    <text>上传</text>
+  </view>
+    <view class='show-popup' hidden="{{shangchuantag}}">    
+    <view class="popup-mask" bindtap="closeshangchuan"></view>
+    <view  class="popup-contents">
+      <view class='file-detail1'>
+        严禁上传违法文件信息，一经发现严格处理
+      </view>
+      <view class='edit' wx:for='{{create}}' wx:key="" data-index='{{index}}' bindtap='createselect'>
+        <image src='{{item.image}}'></image>
+        <text>{{item.name}}</text>
+      </view>
+      <view class='button'  bindtap="closeshangchuan">取消</view>
+    </view>
+  </view>
+  <!-- 底部栏end -->
+
+  <!-- 重命名 -->
+  <view class='show-popup' hidden="{{nametag}}">    
+    <view class="popup-mask" bindtap="closename"></view>
+    <view  class="popup-contents1">
+      <view class='file-detail1'>
+        请输入文件名
+      </view>
+      <view class='input1'>
+      <input type='text' placeholder='请输入文件夹名称'></input>
+      </view>
+      <view class='confirm'>
+        <view class='quxiao'>取消</view>
+        <view class='queding'>确定</view>
+      </view>
+    </view>
+  </view>
+  <!-- 重命名end -->
+</view>

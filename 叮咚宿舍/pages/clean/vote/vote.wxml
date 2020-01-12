@@ -1,0 +1,29 @@
+<!--pages/clean/vote/vote.wxml-->
+<view class='container'>
+    <!-- 搜索框 -->
+  <view class='search'>
+    <view class="searchWrap {{tag2==false?'active':''}}">
+      <icon class='iconS' type='search' color='#0cc032' size='12'></icon>
+      <input value='{{searchKey}}' type='text' focus='true' confirm-type='search' bindconfirm='search'
+       placeholder='输入学号为朋友点赞赢大奖，每天只能点一次哦！' class='searchInput'></input>
+    </view>
+  </view>
+  <!-- 搜索框end -->
+
+  <scroll-view class='scroll'  scroll-into-view="{{xuehao}}" scroll-y='true' scroll-with-animation='true'>
+    <view wx:for="{{list}}" wx:key="" id="{{item.name}}" data-index='{{index}}'>
+      <view class='item'>
+        <image class='back' src='../../../images/icon/mother.jpg'></image>
+          <text class='xuehao'>{{item.xuehao}}</text>
+          <text class='content' style='color: {{colors[index%8]}};'>{{item.content}}</text>
+          <view class='vote' catchtap='onUpTap' data-index='{{index}}' data-id='{{item.vote_id}}'>
+            <image animation="{{animationUp}}" wx:if="{{item.upStatus}}" src="../../../images/icon/wx_app_liked.jpg" />
+      <image animation="{{animationUp}}" wx:else src="../../../images/icon/wx_app_like.jpg" />
+            <text>{{item.vote}}</text>
+          </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <image class='qipao' bindtap='comment' src='../../../images/icon/qipao.jpg'></image>
+</view>

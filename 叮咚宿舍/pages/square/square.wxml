@@ -1,0 +1,7 @@
+<!--pages/square/square.wxml-->
+<view class='container'>
+  <!--顶部图片-->
+  <view class='top-img'>
+    <image src='/images/lunbo/4.jpg'></image>
+  </view>
+</view>

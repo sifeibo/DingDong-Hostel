@@ -1,0 +1,43 @@
+/* pages/address/address.wxss */
+.wrapper{
+  padding-top: 5rpx;
+}
+.item{
+  display: flex;
+  margin-top:1px; 
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 120rpx;
+  font-size: 35rpx;
+  color: rgb(124, 121, 121)
+}
+.item-left{
+  margin-left: 20rpx;
+}
+.item-right{
+  margin-left: 450rpx;
+}
+.s{
+  width: 280rpx;
+  margin-left: 20rpx;
+}
+
+.left{
+  margin-left: 20rpx;
+}
+.right{
+  margin-right: 20rpx;
+}
+.phone{
+  width: 230rpx;
+}
+.item .more {
+  display: flex;
+  align-items: center;
+  margin-right:30rpx; 
+}
+.item .more image {
+  width: 30rpx;
+  height: 30rpx;
+}

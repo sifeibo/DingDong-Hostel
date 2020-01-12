@@ -1,0 +1,10 @@
+<!--pages/me/contact/contact.wxml-->
+<view class='container'>
+  <view id='text'>
+    <text>如果您对我们的服务有什么建议或者想法，在下面白框中写下来</text>
+  </view>
+  <form bindsubmit='submit'>
+    <textarea name='suggest' value='{{suggest}}' maxlength='100' class='textarea'></textarea>
+    <button form-type='submit'>提交</button>
+  </form>
+</view>

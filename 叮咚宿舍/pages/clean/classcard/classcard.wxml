@@ -1,0 +1,23 @@
+<!--pages/clean/classcard/classcard.wxml-->
+<view class='container'>
+  <view class='left'>
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}" class="left-text" wx:key="">
+        {{item}}
+      </view>
+  </view>
+  <scroll-view scroll-x="true" class="right">
+    <view class='right-top'>
+      <view wx:for="{{['一','二','三','四','五','六','日']}}" wx:key="" class="top-text">周{{item}}</view>
+    </view>
+    <view class='right-classcard'>
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}" wx:key="" >
+        <view style="width:1400rpx;margin-top:{{(index+1)*109}}rpx;  position: absolute;border-bottom:1rpx solid {{(index == 3 || index == 7) ?'red':'lightgray'}};">
+        </view>
+      </view>
+      <view  wx:for="{{wlist}}" wx:key="" style="margin-left:{{(item.week-1)*200+5}}rpx;margin-top:{{(item.num-1)*218+5}}rpx;height:{{210}}rpx;width:{{190}}rpx;background-color:{{colorArrays[index%8]}};position:absolute;border-radius: 15rpx;" class='card'>
+        <view class='name'>{{item.class1}}</view>
+        <view class='name2' wx:if="{{item.class2!=''}}">//{{item.class2}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

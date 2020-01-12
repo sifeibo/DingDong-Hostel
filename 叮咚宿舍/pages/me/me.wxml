@@ -1,0 +1,51 @@
+<!--pages/me/me.wxml-->
+<view class='wrapper'>
+  <view class='card profile'  catchtap='person' data-url='/pages/me/person/person'>
+    <view class='info'>
+      <image class='avatar' src='{{userInfo.head_img}}' wx:if='{{userInfo.head_img}}'></image>
+      <image class='avatar' src='/images/icon/unlogin.png' wx:else></image>
+      <view class='text'>
+        <view class='name'>{{userInfo.nickname || '登录/注册'}}</view>
+        <view class='mobile'>{{userInfo.telephone || '修改信息后才能使用功能哦！'}}</view>
+      </view>
+    </view>
+    <view class='more'>
+      <!-- <view class='reddot' wx:if='{{auth && !userInfo.company}}'></view> -->
+      <image src='/images/icon/arrow.png'></image>
+    </view>
+  </view>
+
+  <view class='card items'>
+    <view class='item' hover-class='hover-class' catchtap='person' data-url='/pages/me/address/address'>
+      <view class='title'>
+        <image src='/images/icon/address.png'></image>
+        <view>地址管理</view>
+      </view>
+      <view class='count reddot' wx:if='{{!building_num || !userInfo.school_name || !userInfo.dormitory_num}}'>!</view>
+    </view>
+    <!-- <view class='item' hover-class='hover-class' catchtap='person' data-url='/pages/me/youhui/youhui'>
+      <view class='title'>
+        <image src='/images/icon/youhui.png'></image>
+        <view>优惠卷</view>
+      </view>
+      <view class='count'>{{userInfo.collectedEntriesCount || 0}}张</view>
+    </view> -->
+  </view>
+
+  <view class='card items'>
+    <view class='item' hover-class='hover-class' catchtap='contact' data-url='/pages/me/contact/contact'>
+      <view class='title'>
+        <image src='/images/icon/kefu.png'></image>
+        <view>联系我们</view>
+      </view>
+    </view>
+    <!-- <view class='item' hover-class='hover-class' catchtap='person' data-url='/pages/me/setting/setting'>
+      <view class='title'>
+        <image src='/images/icon/set.png'></image>
+        <view>设置</view>
+      </view>
+    </view> -->
+  </view>
+
+</view>
+

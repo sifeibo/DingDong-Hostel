@@ -1,0 +1,75 @@
+/* pages/clean/classcard/classcard.wxss */
+.container{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.left{
+  width: 40rpx;
+  height: 1160rpx;
+  margin-top: 40rpx; 
+  background: #bde2dc;
+  color:#0dd1ae;
+}
+.left-text{
+  height: 110rpx;
+  font-size: 10pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.right{
+  width: 100%;
+  height: 1200rpx;
+  overflow: hidden;
+
+}
+.right-top{
+  height: 40rpx;
+  width: 1400rpx;
+  display: flex;
+  flex-direction: row;
+  background: #bde2dc;
+  color:#0dd1ae;
+}
+.top-text {
+  width: 200rpx;
+  height: 35rpx;
+  font-size: 10pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.right-classcard{
+  height: 1160rpx;
+  width: 1400rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mengban{
+  width: 1400rpx;
+  height: 1140rpx;
+  border: 1px solid rebeccapurple;
+}
+
+.card{
+  display: flex;
+  flex-direction:column; 
+  text-align: center;
+  color: white;
+  justify-content: center;
+  
+}
+.card .name{
+  font-size: 24rpx;
+} 
+.card .name2{
+  font-size: 24rpx;
+} 
+
+

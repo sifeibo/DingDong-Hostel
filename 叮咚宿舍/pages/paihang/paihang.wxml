@@ -1,0 +1,38 @@
+<!--pages/paihang/paihang.wxml-->
+<view class="container">
+    <view class='zongji'>
+      <view class='yuanxing'>鞭策排行榜</view>
+    </view>
+    <view class="table">
+        <view class="tr">
+            <view class="th">排名</view>
+            <view class="th">支持服务</view>
+            <view class="th">鞭打总次数</view>
+        </view>
+        <view class="tr" wx:for="{{list}}"  data-id='{{item.service_type_id}}' data-service='{{item.service_name}}' wx:key="" bindtap='click'>
+            <view class="td">{{index+1}}</view>
+            <view class="td">{{item.service_name}}</view>
+            <view class="td">{{item.spur_num}}</view>
+        </view>
+    </view>
+
+    <view class='show-popup' hidden="{{tag}}">    
+        <view class="popup-mask" bindtap="closePopupTap"></view>
+        <view  class="popup-contents">
+            <view class='t1'>{{service}}个人排行榜</view>
+            <view class='t2'>个人排名：{{rank}}</view>
+            <view class="table1">
+              <view class="tr">
+                  <view class="th">排名</view>
+                  <view class="th">用户名</view>
+                  <view class="th">10s鞭打次数</view>
+              </view>
+              <view class="tr" wx:for="{{list1}}"  data-id='{{item.service_type_id}}' wx:key="">
+                  <view class="td">{{index+1}}</view>
+                  <view class="td">{{item.nickname}}</view>
+                  <view class="td">{{item.spur_num}}</view>
+              </view>
+          </view>
+        </view>
+  </view> 
+</view>

@@ -1,0 +1,69 @@
+<!--pages/clean/clean-introduction/clean-introdution.wxml-->
+<view class='container'>
+  <!--顶部图片-->
+  <view class='top-img'>
+    <image src='/images/lunbo/1.jpg'></image>
+  </view>
+  <!--价格表-->
+  <view class='middle-price'>
+      <!--价格表-->
+      <view class='youhui'>
+        <van-tag class="demo-margin-right" color="rgb(241, 116, 32)" plain>优惠</van-tag>
+        立即预约最低<view class='wenzi'>享受8折优惠</view>
+      </view>
+      <view class='title-box'>
+        <view class='hengdian'></view>
+        <view class='title'>服务价格</view>
+      </view>
+      <view class='price-box'>
+        <view class='name'>
+          <view class='left'>项目名称</view>
+          <view class='right'>价格</view>
+        </view>
+        <view class='price-item'>
+          <view class='left'>清洁地面</view>
+          <view class='right'>5元</view>
+        </view>
+        <view class='price-item'>
+          <view class='left'>清洁厕所</view>
+          <view class='right'>5元</view>
+        </view>
+        <view class='price-item'>
+          <view class='left'>整理内务</view>
+          <view class='right'>5元</view>
+        </view>
+      </view>
+  </view>
+  <!--服务范围-->
+  <view class='middle-fanwei'>
+    <view class='title-box'>
+        <view class='hengdian'></view>
+        <view class='title'>服务范围</view>
+    </view>
+    <view class='image-box'> 
+      <view class="image-item" wx:for="{{fuwuImg}}" wx:key="">
+    		<view class="image"><image src='{{item.img}}'/></view>
+        <view><text>{{item.name}}</text></view>
+    	</view>
+    </view>
+
+  </view>
+  <!--服务特色-->
+  <view class='middle-tese'>
+    <view class='title-box'>
+        <view class='hengdian'></view>
+        <view class='title'>服务特色</view>
+    </view>
+    <view class='image-box'> 
+      <view class="image-item" wx:for="{{fuwuImg}}" wx:key="">
+    		<view class="image"><image src='{{item.img}}'/></view>
+        <view><text>{{item.name}}</text></view>
+    	</view>
+    </view>
+  </view>
+  <!--立即下单的底部条-->
+  <view class='postion-xiadan'>
+    <view class='price'></view>
+    <view  class="now-buy" bindtap="click1">不能预约</view>
+  </view>
+</view>

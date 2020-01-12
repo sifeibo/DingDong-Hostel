@@ -1,0 +1,55 @@
+/* pages/me/person/person.wxss */
+.wrapper{
+  padding-top: 5rpx;
+}
+.item{
+  display: flex;
+  margin-top:1px; 
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 120rpx;
+  font-size: 35rpx;
+  color: rgb(124, 121, 121)
+}
+.item-left{
+  margin-left: 20rpx;
+}
+.s{
+  width: 280rpx;
+  margin-left: 20rpx;
+}
+.item-right1{
+  margin-left: 300rpx;
+
+}
+
+.item-right{
+  margin-left: 450rpx;
+
+}
+
+.item-right .avatar{
+  width: 90rpx;
+  height: 90rpx;
+  margin-left: 15rpx;
+  border-radius:50%;  
+}
+
+
+
+.item .more {
+
+  align-items: center;
+  margin-right:30rpx; 
+}
+.item .more image {
+  width: 30rpx;
+  height: 30rpx;
+}
+.tishi{
+  width: 100%;
+  color: rgb(117, 117, 117);
+  text-align: center;
+  margin-top: 30rpx;
+}

@@ -1,0 +1,24 @@
+/* comment/comment.wxss */
+page{
+  background: url(http://m.qpic.cn/psb?/899fd018-ca38-4482-b14a-47bbcb16b676/9UIZPq4DFPANfaVnMKYt3HhPUD0yX1vhA*9l5AjAMO0!/b/dFMBAAAAAAAA&bo=3QaDA90GgwMRCT4!&rf=viewer_4) right;
+  background-size: cover;
+}
+textarea{
+  width: 90%;
+  height: 300rpx;
+  margin: 5%;
+  border: 1px solid #CD3278;
+  font-size: 28rpx;
+}
+.submit{
+  width: 80%;
+  height: 80rpx;
+  background: salmon;
+  margin-left: 10%;
+  line-height: 80rpx;
+  color: white;
+  font-size: 30rpx;
+  letter-spacing: 1em;
+  text-indent: 1em; 
+  text-align: center;
+}

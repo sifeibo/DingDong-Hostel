@@ -1,0 +1,64 @@
+<!--pages/clean/clean-detail/clean-detail.wxml-->
+<view class='wrapper'>
+  <!--收获地址和服务时间-->
+  <view class='fuwu'>
+    <view class='item' bindtap='address'>
+      <view class='title' >
+        <image src='/images/icon/address.png'></image>
+        <view wx:if="{{!userInfo.school}}">请选择服务地址</view>
+        <view wx:else ><text>{{userInfo.username}}\t\t{{userInfo.moblie}}\n{{userInfo.school}}\t\t{{userInfo.dong}}-{{userInfo.room}}</text></view>
+      </view>
+      <view class='more'>
+      <image src='/images/icon/arrow.png'></image>
+    </view>
+    </view>
+
+    <view class='item' >
+      <view class='title'>
+        <image src='/images/icon/address.png'></image>
+        <view>服务时间</view>
+        <view class='right'><picker bindchange="time" value="{{timevalue}}" range="{{timearray}}">{{time||'请选择'}}</picker>
+        </view>
+      </view>
+      <view class='more'>
+      <image src='/images/icon/arrow.png'></image>
+    </view>
+    </view>
+  </view>
+
+    <!--选择服务类型-->
+  <view class='fuwu'bindtap="bindGuiGeTap">
+   <view class='item' >
+      <view class='title' >
+        <image src='/images/icon/address.png'></image>
+        <view>请选择服务类型</view>
+      </view>
+      <view class='more'>
+      <image src='/images/icon/arrow.png'></image>
+    </view>
+    </view>
+  </view>
+
+  <!--底部立即预约-->
+  <view class='bottom-box' >    
+        <view></view>
+        <view  class="now-buy" bindtap="bindGuiGeTap" >立即预约</view>
+  </view>
+
+  <!--服务上浮框-->
+  <view class='show-popup' hidden="{{hideShopPopup}}">    
+        <view class="popup-mask" bindtap="closePopupTap"></view>
+        <view  class="popup-contents">
+          <view class='label'>类型：
+            <view class="pop-goods-close" bindtap="closePopupTap"><image src='/images/icon/shutdown.png'></image></view>
+          </view>
+          <view class="label-item-box">
+            <view class="label-item {{item.active ? 'active' : '' }}" wx:for="{{fuwuarray}}"  wx:key="id"  bindtap="labelItemTap" data-fuwname="{{item.name}}" data-index="{{index}}">
+             {{item.name}}
+            </view> 
+           </view> 
+          <view class="pop-goods-price">价格：<text>\t¥\t{{totalprice}}</text></view>
+          <view class="popup-join-btn"  bindtap="buynow">立即预约</view>      
+        </view>
+  </view> 
+</view>

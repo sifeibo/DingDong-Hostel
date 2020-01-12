@@ -1,0 +1,23 @@
+
+<view wx:for="{{10}}" wx:key="">
+<view class="detail">
+  <view class="first">
+    <image class="img" src="/images/icon/money.png"></image>
+  </view>
+  <view class="first2">
+    <view class="color">
+      <text style='font-size:40rpx;'>￥</text>
+      <text class="special-font">5\t</text>\t满20减5</view>
+    <view>抵用券</view>    
+    <view class="size">可用于 2019.3.14--2019.3.31</view>
+  </view>
+  <view class="first3">
+    <view class="second">
+      <navigator url="../index/index" hover-class="navigator-hover" class="style-button">
+         去使用
+      </navigator>
+    </view>
+  </view>
+</view>
+</view>
+

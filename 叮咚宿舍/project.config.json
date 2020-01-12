@@ -1,0 +1,197 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.2",
+	"appid": "wx6e97e68fa6ce5e02",
+	"projectname": "dormitory%20cleaning",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 21,
+			"list": [
+				{
+					"id": -1,
+					"name": "个人信息",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "address",
+					"pathName": "pages/me/chooseaddress/chooseaddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改资料",
+					"pathName": "pages/me/person/person",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地址",
+					"pathName": "pages/me/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选择服务",
+					"pathName": "pages/clean/clean-detail/clean-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "youhui",
+					"pathName": "pages/me/youhui/youhui",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "register",
+					"pathName": "pages/login/register/register",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "清洁介绍",
+					"pathName": "pages/clean/clean-introduction/clean-introdution",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "打卡",
+					"pathName": "pages/clean/daka/daka",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "课程表",
+					"pathName": "pages/clean/classcard/classcard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "广场",
+					"pathName": "pages/square/square",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "sorry",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "contact",
+					"pathName": "pages/me/contact/contact",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "详情",
+					"pathName": "pages/clean/clean-detail/clean-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "鞭策",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "排行榜",
+					"pathName": "pages/paihang/paihang",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "投票",
+					"pathName": "pages/clean/vote/vote",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "云盘",
+					"pathName": "pages/yunpan/yunpan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "打扫",
+					"pathName": "pages/clean/clean-detail/clean-detail",
+					"scene": null
+				}
+			]
+		}
+	}
+}

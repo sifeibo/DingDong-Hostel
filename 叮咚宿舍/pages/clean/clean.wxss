@@ -1,0 +1,184 @@
+/* pages/clean/clean.wxss */
+.wrapper {
+}
+
+.Swiper image{
+  width: 100%;
+}
+.Swiper swiper{
+  height: 400rpx;
+}
+
+.buttonview{
+  width: 100%;
+  height: 300rpx;
+  margin-top: 20rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx
+}
+
+.button-item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20rpx;
+  margin-left: 80rpx;
+}
+
+.buttonview image{
+  width: 75rpx;
+  height: 75rpx;
+}
+
+.cardview{
+  margin-top: 15rpx;
+  height: 450rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-item{
+  margin-left:16rpx; 
+  margin-top: 20rpx;
+  width: 350rpx;
+  height: 200rpx;
+  border: 1rpx solid gainsboro;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+
+.title{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120rpx;
+	height: 35rpx;
+	line-height: 35rpx;
+  background: linear-gradient(to right, rgb(245, 167, 167),rgb(245, 34, 34)); /* 标准的语法（必须放在最后）*/
+	color: #FFFFFF;
+	text-align: center;
+	border-radius:0 8rpx 8rpx 0; 
+	z-index: 2000;
+}
+.title2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120rpx;
+	height: 35rpx;
+	line-height: 35rpx;
+  background: linear-gradient(to right, rgb(92, 228, 216),rgb(35, 205, 248)); /* 标准的语法（必须放在最后）*/
+	color: #FFFFFF;
+	text-align: center;
+	border-radius:0 8rpx 8rpx 0; 
+	z-index: 2000;
+}
+.title3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 170rpx;
+	height: 35rpx;
+	line-height: 35rpx;
+  background: linear-gradient(to right, rgb(243, 204, 145),rgb(243, 199, 52)); /* 标准的语法（必须放在最后）*/
+	color: #FFFFFF;
+	text-align: center;
+	border-radius:0 8rpx 8rpx 0; 
+	z-index: 2000;
+}
+.title4{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 170rpx;
+	height: 35rpx;
+	line-height: 35rpx;
+  background: linear-gradient(to right, rgb(236, 93, 229),rgb(226, 5, 197)); /* 标准的语法（必须放在最后）*/
+	color: #FFFFFF;
+	text-align: center;
+	border-radius:0 8rpx 8rpx 0; 
+	z-index: 2000;
+}
+.bgcolor{
+	width:350rpx;
+	height:200rpx;
+  background: linear-gradient(to bottom, rgb(238, 197, 197),rgb(240, 174, 174)); /* 标准的语法（必须放在最后） */
+  position: relative;
+}
+.bgcolor2{
+	width:350rpx;
+	height:200rpx;
+  background: linear-gradient(to bottom, rgb(217, 247, 244),rgb(172, 232, 247)); /* 标准的语法（必须放在最后） */
+  position: relative;
+}
+.bgcolor3{
+	width:350rpx;
+	height:200rpx;
+  background: linear-gradient(to bottom, rgb(236, 222, 201),rgb(233, 214, 152)); /* 标准的语法（必须放在最后） */
+  position: relative;
+}
+.bgcolor4{
+	width:350rpx;
+	height:200rpx;
+  background: linear-gradient(to bottom, rgb(241, 213, 240),rgb(241, 176, 233)); /* 标准的语法（必须放在最后） */
+  position: relative;
+}
+#h3{
+	position: absolute;
+  font-size: 28rpx;
+	top:40rpx;
+	left:30rpx;
+}
+#h4{
+	color:#aaa;
+	position: absolute;
+  font-size: 25rpx;
+	top:80rpx;
+	left:50rpx;
+}
+.image{
+	width:120rpx;
+	height:120rpx;
+	position: absolute;
+	top:89rpx;
+	right:0;
+	background-color: #FFFFFF;
+	border-radius:130rpx 130rpx 0 130rpx; 
+}
+
+.card-item image{
+  width:120rpx;
+	height:120rpx;
+	background-color: #FFFFFF;
+	border-radius:130rpx 130rpx 0 130rpx; 
+}
+
+
+.guanggao {
+    display: table;
+    width: 100%;
+    line-height: 60rpx;
+    background-color: #fff;
+    white-space: nowrap;
+    border-spacing: .2rem 0;
+    text-align: center;
+    color: #aaa;
+}
+
+.guanggao:before,
+.guanggao:after {
+    display: table-cell;
+    content: '';
+    width: 40%;
+    background: -webkit-linear-gradient(#eee, #eee) repeat-x left center;
+    background: linear-gradient(#eee, #eee) repeat-x left center;
+    background-size: 0.1rem 0.1rem;
+}

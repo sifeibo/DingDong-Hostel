@@ -1,0 +1,14 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+    <image wx:if="{{tag}}"src='/images/lunbo/6.gif'></image>
+     <image  wx:else src='/images/lunbo/5.jpg'></image>
+    <view class='content'>
+      <text>此功能还未上线，请鞭策肥波加班加点！</text>
+      <view class='select'>
+        <Select prop-array='{{selectArray}}' bind:myget='getDate'></Select>
+      </view>
+      <button bindtap='click' wx:if="{{tag}}">鞭策!</button>
+      <button bindtap='click1' wx:else style='background:green'>开始鞭策!</button>
+      <text>10s抽打了：{{clicknum}}次</text>
+    </view>
+</view>

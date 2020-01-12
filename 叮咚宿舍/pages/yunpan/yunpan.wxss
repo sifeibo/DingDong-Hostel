@@ -1,0 +1,216 @@
+/* pages/yunpan/yunpan.wxss */
+.container{
+  padding-top: 120rpx;
+}
+/* 搜索框 */
+.search {
+  background: #fff;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100rpx;
+  top:0;
+  left: 0;
+  display: flex;
+}
+.searchWrap {
+  width: 100%;
+  height: 75rpx;
+  margin: 15rpx 20rpx;
+  background: #f2f2f2;
+  border-radius: 28rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.searchInput{
+  display: inline-block;
+  margin-left: 30rpx;
+  width: calc(100% - 70rpx);
+  line-height: 75rpx;
+  font-size: 30rpx;
+  vertical-align: middle;
+  margin-bottom: 15rpx; 
+}
+.iconS{
+  margin-top: 25rpx; 
+  margin-left: 10rpx;
+}
+
+/* 文件列表 */
+.file-box{
+  width: 100%;
+  padding-bottom: 100rpx;
+}
+.file-item{
+  background: #fff;
+  width: 100%;
+  height: 150rpx;
+  position: relative;
+}
+.file-icon{
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  left: 40rpx;
+  top: 40rpx;
+}
+.file-name{
+  position: absolute;
+  font-weight: bold;
+  left: 150rpx;
+  top: 55rpx;
+}
+.file-select{
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  right: 30rpx;
+  top: 38rpx;
+}
+
+/* 编辑 */
+.show-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  z-index: 4;
+}
+.popup-mask{
+  background-color:rgba(0, 0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  z-index: 5;
+}
+.popup-contents{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background-color: #fff;
+  z-index: 6;
+  font-size:35rpx;
+}
+.file-detail{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  border-bottom: 1rpx solid #eee;
+  align-items: center;
+}
+.file-detail1{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  border-bottom: 1rpx solid #eee;
+  align-items: center;
+  font-size: 26rpx;
+  color: rgb(139, 138, 138);
+	justify-content: center;
+}
+
+.file-detail image{
+  margin-left: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.file-detail text{
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color: rgb(136, 135, 135)
+}
+.edit{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.edit image{
+  margin-left: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.edit text{
+  margin-left: 40rpx;
+  font-size: 28rpx;
+  color: rgb(7, 7, 7)
+}
+.button{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  font-size: 28rpx;
+  background: rgb(243, 243, 243);
+  color: black;
+}
+
+/* 底部上传 */
+.bottom-box{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  background: rgb(243, 243, 243);
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-box image{
+  margin-top:10rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.bottom-box text{
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+}
+
+.popup-contents1{
+  position: fixed;
+  left: 10%;
+  top: 400rpx;
+  width:80%;
+  background-color: #fff;
+  z-index: 6;
+  font-size:35rpx;
+}
+.confirm{
+  display: flex;
+  background: rgb(243, 243, 243);
+  width: 100%;
+  height: 80rpx;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.quxiao{
+  width: 50%;
+  color: rgb(99, 96, 96);
+  border-right: 1rpx solid rgb(161, 159, 159)
+}
+.queding{
+  width: 50%;
+  color: rgba(21, 163, 245, 0.671);
+}
+.input1{
+  width: 80%;
+  height: 75rpx;
+  font-size: 27rpx;
+  margin-left: 10%;
+  margin-top: 25rpx;
+  margin-bottom: 43rpx;
+  background: rgb(243, 243, 243);
+  display: flex;
+  align-items: center;
+}
+.input1 input{
+  margin-left: 15rpx;
+}

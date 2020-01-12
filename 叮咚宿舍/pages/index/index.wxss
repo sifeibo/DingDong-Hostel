@@ -1,0 +1,26 @@
+/* pages/index/index.wxss */
+image{
+  width: 100%;
+  height: 300px;
+}
+
+.content{
+  margin-top: 20rpx;
+  text-align: center;
+}
+.content text{
+  display: block;
+  margin-bottom:100rpx; 
+}
+.content button{
+  width: 50%;
+  color: white;
+  background: red;
+}
+
+.select{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80rpx;
+}

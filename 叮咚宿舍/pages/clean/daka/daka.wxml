@@ -1,0 +1,18 @@
+<!--pages/clean/daka/daka.wxml-->
+<view class="container">
+    <view class='zongji'>
+      <view class='yuanxing'>{{zongji}}次</view>
+    </view>
+    <view class="table">
+        <view class="tr">
+            <view class="th">项目</view>
+            <view class="th">次数</view>
+        </view>
+        <view class="tr" wx:for="{{list}}" wx:key="">
+            <view class="td">{{item[0]}}</view>
+            <view class="td">{{item[1]}}</view>
+        </view>
+    </view>
+      <div class="guanggao">广告</div>
+    <!-- <ad unit-id="adunit-d37779a3e2e9a716"></ad> -->
+</view>

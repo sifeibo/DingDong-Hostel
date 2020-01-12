@@ -1,0 +1,30 @@
+/* pages/me/contact/contact.wxss */
+page{
+  background: gainsboro;
+}
+.container{
+  margin: 100rpx auto;
+  width: 80%;
+  height: 600rpx;
+  background: wheat;
+  position: relative;
+}
+#text{
+  text-indent: 2em;
+}
+.textarea{
+  position: absolute;
+  width: 500rpx;
+  height: 400rpx;
+  background: white;
+  top: 150rpx;
+  left: 50rpx;
+}
+button{
+  position: absolute;
+  width: 300rpx;
+  background: red;
+  color: white;
+  top: 630rpx;
+  left: 150rpx;
+}

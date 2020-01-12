@@ -1,0 +1,16 @@
+/* pages/square/square.wxss */
+.container{
+  margin: 0;
+  padding-bottom: 100rpx;
+}
+
+.top-img{
+  width: 750rpx;
+  height: 400rpx;
+  background: white;
+  /* border-bottom: 1px solid rgb(241, 116, 32) */
+}
+.top-img image{
+  width: 750rpx;
+  height: 400rpx;
+}

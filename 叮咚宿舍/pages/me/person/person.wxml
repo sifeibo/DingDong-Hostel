@@ -1,0 +1,58 @@
+<!--pages/me/person/person.wxml-->
+<view class='wrapper'>
+  <view class='item' bindtap='chooseImage'>
+    <view class='item-left'>头像</view>
+    <view class='item-right'>
+      <image class='avatar' src='{{userInfo.head_img}}' wx:if='{{userInfo.head_img}}'></image>
+      <image class='avatar' src='/images/icon/unlogin.png' wx:else></image>
+    </view>
+    <view class='more'>
+      <image class='img' src='/images/icon/arrow.png'></image>
+    </view>
+  </view>
+  <view class='item' >
+    <view class='s'>称呼</view>
+    <view class='item-right1'>
+      <view class='name'><input bindinput='changename' placeholder='未填写' value='{{userInfo.nickname}}'></input></view>
+    </view>
+    <!-- <view class='more'>
+      <image class='img' src='/images/icon/arrow.png'></image>
+    </view> -->
+  </view>
+  <view class='item'>
+    <view class='item-left'>性别</view>
+    <view class='item-right'>
+      <picker bindchange="bindPickerChange" value="{{sexvalue}}" range="{{array}}">{{userInfo.sex||'请选择'}}</picker>
+    </view>
+    <view class='more'>
+      <image class='img' src='/images/icon/arrow.png'></image>
+    </view>
+  </view>
+
+  <view class='item'>
+    <view class='s'>手机</view>
+    <view class='item-right1'>
+      <view class='phone'><input bindinput='changephone' placeholder='填写手机号' value='{{userInfo.telephone}}'></input></view>
+    </view>
+  </view>
+
+  <view class='item' >
+    <view class='s'>学号</view>
+    <view class='item-right1'>
+      <view class='name'><input bindinput='changexuehao' placeholder='未填写' value='{{userInfo.xuehao}}'></input></view>
+    </view>
+    <!-- <view class='more'>
+      <image class='img' src='/images/icon/arrow.png'></image>
+    </view> -->
+
+  </view>
+    <view class='item' >
+    <view class='s'>教务密码</view>
+    <view class='item-right1'>
+      <view class='name'><input type='password' bindinput='changexhpassword' placeholder='未填写' value='{{userInfo.xhpassword}}'></input></view>
+    </view>
+  </view>
+
+  <view class='tishi'> 不要费尽心思找保存按钮了，返回就可以保存啦！</view> 
+</view>
+ 

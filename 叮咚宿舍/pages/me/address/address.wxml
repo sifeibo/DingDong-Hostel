@@ -1,0 +1,37 @@
+<!--pages/me/address/address.wxml-->
+<view class='wrapper'> 
+  <view class='item' >
+    <view class='item-left'>学校</view>
+    <view class='item-right'>
+       <picker bindchange="bindPickerChange" value="{{schoolvalue}}" range="{{schoolarray}}">{{userInfo.school_name||'请选择'}}</picker>
+    </view>
+    <view class='more'>
+      <image src='/images/icon/arrow.png'></image>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='item-left'>栋号</view>
+    <view class='item-right'>
+       <picker bindchange="bindPickerChange1" value="{{dongvalue}}" range="{{donghaoarray}}">{{userInfo.building_num||'请选择'}}</picker>
+    </view>
+    <view class='more'>
+      <image src='/images/icon/arrow.png'></image>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='s'>房号</view>
+    <view class='item-right'>
+      <view class='name'><input bindinput='changeroom' placeholder='未填写' value='{{userInfo.dormitory_num}}'></input></view>
+    </view>
+    <view class='more'>
+      <image src='/images/icon/arrow.png'></image>
+    </view>
+  </view>
+  <!-- <view class='item'>
+    <view class='left'>手机</view>
+    <view class='right'>
+      <view class='phone'><input bindinput='changephone' placeholder='将通过该手机与您联系' value='{{moblie}}'></input></view>
+    </view>
+  </view> -->
+</view>
+ 

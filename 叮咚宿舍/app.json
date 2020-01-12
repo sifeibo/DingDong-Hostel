@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/clean/clean",
+    "pages/order/order",
+    "pages/me/me",
+    "pages/login/login",
+    "pages/me/person/person",
+    "pages/login/register/register",
+    "pages/me/youhui/youhui",
+    "pages/me/setting/setting",
+    "pages/me/feedback/feedback",
+    "pages/me/address/address",
+    "pages/clean/clean-detail/clean-detail",
+    "pages/square/square",
+    "pages/clean/classcard/classcard",
+    "pages/clean/daka/daka",
+    "pages/clean/clean-introduction/clean-introdution",
+    "pages/index/index",
+    "pages/me/contact/contact",
+    "pages/paihang/paihang",
+    "pages/clean/vote/vote",
+    "pages/clean/comment/comment",
+    "pages/yunpan/yunpan",
+    "pages/yunpan/dir-1/dir-1",
+    "pages/yunpan/dir-2/dir-2",
+    "pages/yunpan/dir-3/dir-3",
+    "pages/yunpan/dir-4/dir-4"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0dd1ae",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#0dd1ae",
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/clean/clean",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home-select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/icon/me.png",
+        "selectedIconPath": "images/icon/me-select.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "/dist/button/index",
+    "van-tab": "/dist/tab/index",
+    "van-tabs": "/dist/tabs/index",
+    "van-search": "/dist/search/index",
+    "van-notice-bar": "/dist/notice-bar/index",
+    "van-tag": "/dist/tag/index",
+    "Select": "/Componet/select/select"
+  },
+  "sitemapLocation": "sitemap.json"
+}

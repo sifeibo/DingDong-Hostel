@@ -1,0 +1,30 @@
+<!--pages/ordertail/ordertail.wxml-->
+<view class='wrapper'>
+  <view class='fuwu'>
+    <view class='item' bindtap='orderdetail' data-index='{{index}}'>
+      <view class='title' >
+        <image src='/images/icon/address.png'></image>
+        <view  ><text>{{userInfo.username}}\t\t{{userInfo.moblie}}\n{{userInfo.school}}\t\t{{userInfo.dong}}-{{userInfo.room}}</text></view>
+      </view>
+    </view>
+
+
+    <view class='item' bindtap='orderdetail' data-index='{{index}}'>
+      <view class='title' >
+        <image src='/images/icon/time.png'></image>
+        <view  ><text>{{userInfo.time}}</text></view>
+      </view>
+    </view>
+
+    <view class='item' bindtap='orderdetail' data-index='{{index}}'>
+      <view class='title' >
+        <image src='/images/icon/fuwu.png'></image>
+        <view  ><text>{{userInfo.fuwu}}</text></view>
+      </view>
+    </view>
+  </view>
+
+    <button>开始前往</button>
+    <button>完成订单</button>
+</view>
+

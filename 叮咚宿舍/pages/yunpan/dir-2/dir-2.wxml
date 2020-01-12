@@ -1,0 +1,58 @@
+<!--pages/yunpan/dir-1/dir-1.wxml-->
+<view class='container'>
+    <!-- 搜索框 -->
+  <view class='search'>
+    <view class="searchWrap {{tag2==false?'active':''}}">
+      <icon class='iconS' type='search' color='#80808F' size='13'></icon>
+      <input value='{{searchKey}}' type='text' focus='true' confirm-type='search' bindconfirm='search'
+       placeholder='搜索网盘文件！' class='searchInput'></input>
+    </view>
+  </view>
+  <!-- 搜索框end -->
+
+  <!-- 文件列表 -->
+  <view class='file-box'> 
+    <view class='file-item' wx:for="{{10}}" wx:key="" data-index='{{index}}' bindtap='clickfile'>
+      <image class='file-icon' src='../../../images/yunpan/file.png'></image>
+      <text class='file-name'>复仇者联盟</text>
+      <image class='file-select' catchtap='clickselect' data-index='{{index}}' src='../../../images/yunpan/more.png'></image>
+    </view>
+  </view>
+  <!-- 编辑 -->
+  <view class='show-popup' hidden="{{selecttag}}">    
+    <view class="popup-mask" bindtap="closePopupTap"></view>
+    <view  class="popup-contents">
+      <view class='file-detail'>
+        <image src='../../../images/yunpan/file.png'></image>
+        <text>复仇者联盟</text>
+      </view>
+      <view class='edit' wx:for='{{edit}}'>
+        <image src='{{item.image}}'></image>
+        <text>{{item.name}}</text>
+      </view>
+      <view class='button'  bindtap="closePopupTap">取消</view>
+    </view>
+  </view> 
+  <!-- 编辑end -->
+  <!-- 文件列表end -->
+
+  <!-- 底部栏 -->
+  <view class='bottom-box' bindtap='shangchuan'>
+    <image src='../../../images/yunpan/create.png'></image>
+    <text>上传</text>
+  </view>
+    <view class='show-popup' hidden="{{shangchuantag}}">    
+    <view class="popup-mask" bindtap="closeshangchuan"></view>
+    <view  class="popup-contents">
+      <view class='file-detail1'>
+        严禁上传违法文件信息，一经发现严格处理
+      </view>
+      <view class='edit' wx:for='{{create}}'>
+        <image src='{{item.image}}'></image>
+        <text>{{item.name}}</text>
+      </view>
+      <view class='button'  bindtap="closeshangchuan">取消</view>
+    </view>
+  </view>
+  <!-- 底部栏end -->
+</view>

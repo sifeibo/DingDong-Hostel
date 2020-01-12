@@ -1,0 +1,16 @@
+<view class='wrapper'>
+  <view class='top'>
+    <view class='logo'>
+      <image src='/images/icon/clean-blue.png'></image>
+    </view>
+    <form class='form' bindsubmit='commit'>
+      <view>
+        <input name='phoneNumber' placeholder='手机号/邮箱' focus></input>
+        <input name='password' placeholder='密码' password='true' value='{{password}}'></input>
+      </view>
+      <button class='login' formType='submit'>登录</button>
+    </form>
+    <button class='login' bindtap='zhuce' data-url = '/pages/login/register/register'>注册</button>
+  </view>
+  <view class='footer'>叮咚宿舍</view>
+</view>

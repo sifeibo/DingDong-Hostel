@@ -1,0 +1,71 @@
+/* pages/clean/daka/daka.wxss */ 
+page{
+  background: url(http://img4.imgtn.bdimg.com/it/u=2253953894,2277266544&fm=214&gp=0.jpg);
+
+}
+.zongji{
+  width: 90%;
+  height: 135rpx;
+  margin: 0 auto;
+  position:relative;
+ 
+}
+/* background: url(http://img3.imgtn.bdimg.com/it/u=2400409083,1646651693&fm=214&gp=0.jpg) */
+.yuanxing{
+  position: absolute;
+  left:240rpx; top:5px; 
+  width:200rpx;
+  height: 120rpx;
+  border-radius:50%;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 40rpx;
+  color: rgb(245, 166, 19);
+  background: wheat
+}
+.table{
+  border:1px solid #dadada;
+  border-right: 0;
+  border-bottom: 0;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10rpx;
+  background: white
+}
+.tr{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th,.td{
+  padding: 18rpx;
+  border-bottom: 1rpx solid #dadada;
+  border-right: 1rpx solid #dadada;
+  text-align: center;
+  width:100%
+}
+.th{
+  font-weight: 400;
+  background-color: #dadada
+}
+
+.guanggao {
+    display: table;
+    width: 100%;
+    line-height: 60rpx;
+    background-color: #fff;
+    white-space: nowrap;
+    border-spacing: .2rem 0;
+    text-align: center;
+    color: #aaa;
+}
+
+.guanggao:before,
+.guanggao:after {
+    display: table-cell;
+    content: '';
+    width: 40%;
+    background: -webkit-linear-gradient(#eee, #eee) repeat-x left center;
+    background: linear-gradient(#eee, #eee) repeat-x left center;
+    background-size: 0.1rem 0.1rem;
+}

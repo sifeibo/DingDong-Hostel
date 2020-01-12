@@ -1,0 +1,62 @@
+<!--pages/clean/clean.wxml-->
+<view class='wrapper'>
+  <view class='welcome'></view>
+
+ 
+
+  <!-- 轮播图 -->
+  <view class='Swiper'>
+    <swiper indicator-dots='true' autoplay="true" interval="{{3000}}" duration="{{500}}">
+      <block wx:for="{{imgUrls}}" wx:key=''>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+   <!--广播-->
+  <van-notice-bar text="{{ text }}" left-icon="//img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png"/>
+  <!--按钮-->
+  <view class='buttonview'>
+      <view class='button-item' wx:for="{{buttonList}}" data-index = "{{index}}" wx:key="" bindtap='clickbutton'>
+        <image src='{{item.img}}'></image>
+        <view>{{item.name}}</view>
+      </view>
+  </view>
+  
+  <div class="guanggao">广告</div>
+  <ad unit-id="adunit-e86e08627300e831"></ad>
+  <!--卡片-->
+  <!-- <view class='cardview'>
+    <view class='card-item' wx:for="{{cardList}}" data-index = "{{index}}" wx:key="" bindtap='clickcard'>
+    	<view class="title"  wx:if="{{index === 0}}">{{item.title}}</view>
+      <view class="title2" wx:elif="{{index === 1}}">{{item.title}}</view>
+      <view class="title3" wx:elif="{{index === 2}}">{{item.title}}</view>
+      <view class="title4" wx:elif="{{index === 3}}">{{item.title}}</view>
+    	<view class="bgcolor" wx:if="{{index === 0}}">
+    		<view id='h3'>{{item.name}}</view>
+    		<view id='h4'>{{item.leibie}}</view>
+    		<view class="image"><image src='{{item.img}}'/></view>
+    	</view>
+      <view class="bgcolor2" wx:elif="{{index === 1}}">
+    		<view id='h3'>{{item.name}}</view>
+    		<view id='h4'>{{item.leibie}}</view>
+    		<view class="image"><image src='{{item.img}}'/></view>
+    	</view>
+      <view class="bgcolor3" wx:elif="{{index === 2}}">
+    		<view id='h3'>{{item.name}}</view>
+    		<view id='h4'>{{item.leibie}}</view>
+    		<view class="image"><image src='{{item.img}}'/></view>
+    	</view>
+      <view class="bgcolor4" wx:elif="{{index === 3}}">
+    		<view id='h3'>{{item.name}}</view>
+    		<view id='h4'>{{item.leibie}}</view>
+    		<view class="image"><image src='{{item.img}}'/></view>
+    	</view>
+    </view>
+  </view> -->
+       
+  <!-- <button class='button' bindtap='dingdong' data-url='/pages/clean/clean-detail/clean-detail'>叮咚一下</button> -->
+</view>
+
+

@@ -1,0 +1,152 @@
+/* pages/clean/clean-detail/clean-detail.wxss */
+.wrapper{
+  margin-top: 20rpx;
+}
+
+.fuwu{
+  background: #fff;
+  margin: 20rpx;
+  border-radius:20rpx;
+}
+.item{
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+  height: 150rpx;
+  border-bottom: 1rpx solid #efefef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item .title {
+  flex: 1;
+  font-size: 32rpx;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.item image {
+  width: 42rpx;
+  height: 42rpx;
+  margin-right: 40rpx;
+}
+
+.right{
+  margin-left: 270rpx;
+}
+
+.more{
+  width: 20rpx;
+}
+
+.bottom-box{
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow:0 0 1rpx 0 ;
+}
+ 
+.bottom-box .now-buy{
+  text-align: center;
+  height: 100%;
+  width: 250rpx;
+  line-height: 100rpx;
+  background-color: #0dd1ae;
+  color:#fff;
+  font-size: 34rpx;
+}
+
+.show-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  z-index: 4;
+}
+.popup-mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.popup-contents{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background-color: #fff;
+  z-index: 6;
+  font-size:35rpx;
+}
+
+.popup-join-btn{
+  width: 100%;
+  height: 89rpx;
+  text-align: center;
+  line-height: 89rpx;
+  font-size:34rpx;
+  color:#ffffff;
+  background-color: #0dd1ae;
+}
+.buy-num-box .num-box .hui{
+  background-color: #f5f5f9;
+}
+
+ .label{
+  display: flex;
+  justify-content: space-between;
+  color:#000;
+  padding-left: 30rpx;
+  padding: 30rpx 0 30rpx 30rpx;
+}
+
+.label-item-box{
+  padding: 30rpx;
+  display: inline-flex;
+  width: 200rpx;
+  margin-left: 100rpx;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.label-item{
+  font-size:30rpx;
+  color:#000;
+  padding: 14rpx 20rpx;
+  border: 1px solid #ddd;
+  border-radius: 6rpx;
+  margin: 0 20rpx 20rpx 0;
+
+}
+
+.pop-goods-price{
+  border-top:1px solid #ddd;
+  padding: 50rpx 0 50rpx 30rpx
+}
+
+.pop-goods-close image{
+  width: 36rpx;
+  height: 36rpx;
+  margin-right:30rpx 
+}
+
+.pop-goods-price text{
+  color: #0dd1ae
+}
+.label-item.active{
+  color: #e64340;
+  border: 1px solid #e64340;
+}
+
+
+

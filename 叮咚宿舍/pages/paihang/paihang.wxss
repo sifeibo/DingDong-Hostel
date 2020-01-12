@@ -1,0 +1,104 @@
+/* pages/paihang/paihang.wxss */
+/* pages/clean/daka/daka.wxss */ 
+page{
+  background: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3496351290,782700360&fm=26&gp=0.jpg);
+ 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.zongji{
+  width: 90%;
+  height: 300rpx;
+  margin: 0 auto;
+ 
+}
+ /*  */
+/* background: url(http://img3.imgtn.bdimg.com/it/u=2400409083,1646651693&fm=214&gp=0.jpg) */
+.yuanxing{
+  text-align: center;
+  line-height: 300rpx;
+  font-size: 50rpx;
+  color: rgb(245, 166, 19);
+}
+.table{
+  border:1px solid #dadada;
+  border-right: 0;
+  border-bottom: 0;
+  width: 90%;
+  margin-left: 5%;
+  background: white
+}
+.tr{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th,.td{
+  padding: 18rpx;
+  border-bottom: 1rpx solid #dadada;
+  border-right: 1rpx solid #dadada;
+  text-align: center;
+  width:100%;
+  overflow: hidden;    
+  text-overflow:ellipsis;    
+  white-space: nowrap;
+}
+.th{
+  font-weight: 400;
+  background-color: #dadada
+}
+
+
+/* 图层蒙版 */
+.show-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  z-index: 4;
+}
+.popup-mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.popup-contents{
+  position: fixed;
+  left: 5%;
+  top: 100rpx;
+  width:90%;
+  height: 1050rpx;
+  background-color: #fff;
+  z-index: 6;
+  font-size:35rpx;
+  background: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1648574916,2541081652&fm=11&gp=0.jpg) 
+}
+
+.table1{
+  border:1px solid #dadada;
+  border-right: 0;
+  border-bottom: 0;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 50rpx;
+  background: white;
+  font-size: 28rpx;
+}
+
+.t1{
+  text-align: center;
+  color: pink;
+  font-size: 40rpx;
+}
+
+.t2{
+  text-align: center;
+  color: white;
+  font-size: 30rpx;
+}
